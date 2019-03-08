@@ -1,0 +1,63 @@
+---------------
+
+
+Using SELECT with WHERE.
+
+Syntax example:
+
+->  SELECT 'column1', 'column2',... 'columnN'
+    FROM 'table_name'
+    WHERE 'conditions';
+    
+
+The WHERE clause appears right after the FROM clause of the SELECT statement.
+
+The conditions are used to filter the rows returned from the SELECT statement.
+
+
+---------------
+
+
+SELECT WHERE statements:
+
+Operator								Description
+
+	 =										  'Equal'
+	 >											'Greater Than'
+	 <											'Less Than'
+	 >=											'Greater or Equal Than'
+	 <=											'Less or Equal Than'
+	 <> or !=								'Not Equal'
+	 AND										'logical operator AND'
+	 OR											'logical operator OR'
+
+
+---------------
+
+
+Udemy Course example:
+
+'You want to select every customer with the first name "Jamie".  This example will use the WHERE clause and the = operator.'
+
+SELECT last_name, first_name
+FROM customer
+WHERE first_name = 'Jamie';
+
+
+---------------
+
+
+*You can also use logical operators to further specify the search.
+
+SELECT last_name, first_name
+FROM customer
+WHERE first_name = 'Jamie' AND last_name = 'Rice';
+
+
+---------------
+
+
+*End of notes on this topic.
+
+
+---------------
