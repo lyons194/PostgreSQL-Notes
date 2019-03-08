@@ -1,0 +1,14 @@
+Using the SELECT command with the DISTINCT command.
+
+Syntax example:
+
+  -> SELECT DISTINCT 'column1', 'column2' FROM 'table_name';
+  
+     (Note: You can use multiple lines in the SQL editor.)
+
+SELECT DISTINCT allows for the user to select distinct characteristics from a particular column in a database.
+
+->  For example: DVD rental rates, year released, are good examples of data characteristics that repeat accross all movies listed in the Udemy DVD sample database.
+
+->  An example of a data characteristic from the Udemy DVD sample database that doesn't really work with SELECT DISTINCT is "description", because each movie has its own unique description.
+
