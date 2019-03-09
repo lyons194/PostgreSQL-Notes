@@ -1,0 +1,38 @@
+Notes regarding the 'ORDER BY' statement.
+
+-When you query data from a table, PostgreSQL returns the rows in the order that they were inserted into that table.
+
+-In order to sort the result, you use the ORDER BY clause in the SELECT statement.
+
+-The ORDER BY clause allows you to sort the rows returned from the SELECT statement in ascending or descending order, based on the criteria specified.
+
+
+---------------
+
+Example of a PostgreSQL query that uses the ORDER BY statement, with ascending order specification:
+
+SELECT column_name_1, column_name_2
+FROM table_name
+ORDER BY column_name_1 ASC;
+
+
+---------------
+
+
+Example of a PostgreSQL query that uses the ORDER BY statement, with descending order specification:
+
+SELECT column_name_1, column_name_2
+FROM table_name
+ORDER BY column_name_1 DESC;
+
+
+---------------
+
+-Note:  When using ascending/descending specifications, only use one at a time.
+
+-Use ASC to sort the result set in ascending order and DESC to sort the result set in descending order.
+
+-If you leave this specification spot blank, the ORDER BY clause will return the values 
+
+---------------
+
