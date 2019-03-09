@@ -28,11 +28,92 @@ ORDER BY column_name_1 DESC;
 
 ---------------
 
+
 -Note:  When using ascending/descending specifications, only use one at a time.
 
 -Use ASC to sort the result set in ascending order and DESC to sort the result set in descending order.
 
--If you leave this specification spot blank, the ORDER BY clause will return the values 
+-If you leave this specification spot blank, the ORDER BY clause will return the values in ascending order by default.
+
 
 ---------------
+
+
+Example:
+
+SELECT first_name, last_name
+FROM customer
+ORDER BY last_name DESC;
+
+
+---------------
+
+
+-Note:  In the above example, the query is 'ordered by' the last_name variable; when doing this in PostgreSQL, this command specifies which column to rearrange.
+
+
+---------------
+
+
+Another ORDER BY example query:
+
+
+SELECT first_name, last_name
+FROM customer
+ORDER BY first_name ASC,
+last_name DESC;
+
+
+---------------
+
+
+-The above example shows how you can use the ORDER BY statement on multiple columns when querying a table.
+
+
+---------------
+
+
+Another ORDER BY example query:
+
+SELECT first_name
+FROM customer
+ORDER BY last_name;
+
+
+---------------
+
+
+-Note:  MySQL/Oracle may not let you execute the above query sample.
+
+
+---------------
+
+
+Another ORDER BY example query:
+
+SELECT customer_id, amount
+FROM payment
+ORDER BY amount DESC
+LIMIT 10;
+
+
+---------------
+
+
+-Note:  It is good practice to select the column that you're ordering by.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
