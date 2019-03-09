@@ -1,0 +1,20 @@
+The 'LIMIT' function.
+
+-LIMIT allows the user to limit the number of rows they receive after querying data from a table.
+
+-This function is useful when the user wants to query all available columns while limiting the number of rows that are returned.
+
+-This function should be specified at the end of a SQL query.
+
+
+---------------
+
+
+Example of a query that contains the LIMIT function:
+
+
+SELECT * FROM 'table_name'
+LIMIT 10;
+
+
+---------------
