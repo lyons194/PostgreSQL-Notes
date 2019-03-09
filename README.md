@@ -1,2 +1,2 @@
 # PostgreSQL-Notes
-Notes and examples from a class I took on PostgreSQL.
+Notes and examples from a PostgreSQL class I took.
