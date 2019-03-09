@@ -1,0 +1,27 @@
+The 'COUNT' Function.
+
+---------------
+
+example:
+
+SELECT COUNT(*) FROM 'table_name';
+
+SELECT COUNT(column_name) FROM table;
+
+---------------
+
+-The COUNT function does not consider null values.
+
+-We can also use COUNT() with DISTINCT.
+
+
+---------------
+
+example:
+
+SELECT COUNT(*) FROM payment;
+
+SELECT COUNT(DINTINCT 'column_name') FROM table_name;
+
+
+---------------
