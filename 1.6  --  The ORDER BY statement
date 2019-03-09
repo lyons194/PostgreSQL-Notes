@@ -103,17 +103,24 @@ LIMIT 10;
 -Note:  It is good practice to select the column that you're ordering by.
 
 
+---------------
 
 
+Another ORDER BY example query:
+
+SELECT film_id, title
+FROM film
+ORDER BY film_id ASC
+LIMIT 5;
 
 
+---------------
 
 
+-Note:  This example find the titles of the first five film id's of the Udemy sample database.
 
 
+---------------
 
 
-
-
-
-
+End of notes on this section.
