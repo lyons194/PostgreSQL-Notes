@@ -20,16 +20,16 @@ The conditions are used to filter the rows returned from the SELECT statement.
 
 SELECT WHERE statements:
 
-Operator								Description
+Operator		Description
 
-	 =										  'Equal'
-	 >											'Greater Than'
-	 <											'Less Than'
-	 >=											'Greater or Equal Than'
-	 <=											'Less or Equal Than'
-	 <> or !=								'Not Equal'
-	 AND										'logical operator AND'
-	 OR											'logical operator OR'
+ =			'Equal'
+ >			'Greater Than'
+ <			'Less Than'
+ >=			'Greater or Equal Than'
+ <=			'Less or Equal Than'
+ <> or !=		'Not Equal'
+ AND			'logical operator AND'
+ OR			'logical operator OR'
 
 
 ---------------
