@@ -1,0 +1,42 @@
+The BETWEEN statement.
+
+-We use the BETWEEN operator to match a value against a range of values.
+
+
+---------------
+
+Example:
+
+value BETWEEN low AND high;
+
+
+---------------
+
+
+Note:  You can rewrite the BETWEEN operator by using the grater than or equal to operatir or the less than equal operator as the following statement:
+
+
+---------------
+
+
+Example:
+
+value >= low AND value <= high;
+
+
+A.K.A.:
+
+value < low OR value > high;
+
+
+Example:
+
+
+SELECT customer_id, amount
+FROM payment
+WHERE amount BETWEEN 8 AND 9;
+
+
+---------------
+
+
