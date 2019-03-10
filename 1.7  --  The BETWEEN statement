@@ -37,6 +37,14 @@ FROM payment
 WHERE amount BETWEEN 8 AND 9;
 
 
+EXample:
+
+
+SELECT amount, payment_date
+FROM payment
+WHERE payment_date BETWEEN '2002-02-07' AND '2002-02-15'
+
+
 ---------------
 
 
