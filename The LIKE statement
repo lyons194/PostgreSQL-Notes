@@ -1,0 +1,53 @@
+The 'LIKE' statement.
+
+
+---------------
+
+Example:
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE 'Jen%';
+
+
+---------------
+
+-Note:  The '%' sign signifies: "any characteristics following the specified beginning of the string".
+
+-This is called a 'pattern'.  You can construct a pattern by combining a string with wildcard characters and use the LIKE or NOT LIKE operators to find matches.
+
+-Use the percent (%) sign in order to match any equence of characters.
+
+-Use the underscore (_) sign in order to match any single character.
+
+
+---------------
+
+Example:
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE '%y';
+
+
+---------------
+
+
+-The above example query returns all first names that end in 'y'.
+
+-The percentage sign is a 'wildcard operator'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
