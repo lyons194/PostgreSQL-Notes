@@ -1,0 +1,90 @@
+The 'LIKE' statement.
+
+
+---------------
+
+
+Example:
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE 'Jen%';
+
+
+---------------
+
+
+-Note:  The '%' sign signifies: "any characteristics following the specified beginning of the string".
+
+-This is called a 'pattern'.  You can construct a pattern by combining a string with wildcard characters and use the LIKE or NOT LIKE operators to find matches.
+
+-Use the percent (%) sign in order to match any equence of characters.
+
+-Use the underscore (_) sign in order to match any single character.
+
+
+---------------
+
+
+Example:
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE '%y';
+
+
+---------------
+
+
+-The above example query returns all first names that end in 'y'.
+
+-The percentage sign is a 'wildcard operator'.
+
+
+---------------
+
+
+Example:
+
+SELECT first_name, last_name
+FROM customers
+WHERE first_name LIKE '%y%';
+
+
+---------------
+
+
+-Note:  The above sample query returns all first names that have a 'y' in the database.
+
+
+---------------
+
+
+Example:
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE '_her%';
+
+
+---------------
+
+
+-Note:  The underscore symbol stands in for a single character.  For example, in the Udemy example of this sample query, the following first names are retrieved from the database (note that I have put the special letters in uppercase):
+
+"CHERyl"
+"THEResa"
+"SHERry"
+
+-As we can observe, each of the above three names have 'her' within them.
+
+
+---------------
+
+
+-Note:  The LIKE statement is case-sensitive, which means that whatever value you put into it to analyst will need to be case-sensitive.
+
+-For a non-case-sensitive operator, use ILIKE.
+
+
+---------------
