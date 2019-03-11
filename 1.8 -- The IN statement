@@ -1,0 +1,44 @@
+The 'IN' Statement.
+
+-You can use the IN operator with the WHERE clause to check if a value matches any value in a list of values.
+
+-The syntax of the IN operator is as follows:
+
+
+---------------
+
+
+Example:  value IN(value1, value2...)
+
+
+---------------
+
+
+-The expression returns True is the value matches any value in the list, i.e., value1, value2, etc.
+
+-The list of values is not limited to a list of numbers or strings but also a result set of a SELECT statement as shown in the following example:
+
+
+---------------
+
+
+Example:
+
+value IN(SELECT value FROM table_name);
+
+
+---------------
+
+
+-Note:  The above example is an example of a 'subquery', as there is a SELECT FROM statement within the IN operator.
+
+-You can also use 'NOT IN', which verifies whether a value is not within a list of values.
+
+
+---------------
+
+Example:
+
+
+
+---------------
