@@ -30,5 +30,29 @@ FROM payment;
 
 
 ---------------
+Examples of aggregate functions:
+
+Example 1:
+
+SELECT MIN(amount) FROM payment
+WHERE amount = 0.00;
+
+
+Example 2:
+
+
+SELECT MAX(amount) FROM payment;
+
+-> This query returns a column's highest value.
+
+
+Example 3:
+
+SELECT SUM(amount) FROM payment;
+
+-> This query returns the summation of a column's data.
+
+
+
 
 
