@@ -37,3 +37,59 @@ GROUP BY customer_id;
 -GROUP BY commands are particularly useful when used with aggregate functions.
 
 
+---------------
+
+
+Example 3:
+
+SELECT customer_id, SUM(amount)
+FROM payment
+GROUP BY customer_id;
+
+
+---------------
+
+
+-You can use ORDER BY commands with GROUP BY commands.
+
+
+---------------
+
+
+Example 4:
+
+
+SELECT customer_id, SUM(amount)
+FROM payment
+GROUP BY customer_id
+ORDER BY SUM(amount) DESC;
+
+
+---------------
+
+
+Example 5:
+
+SELECT staff_id, COUNT(payment_id)
+FROM payment
+GROUP BY staff_id;
+
+
+---------------
+
+
+Example 6:
+
+SELECT rating, COUNT(rating)
+FROM film
+GROUP BY rating;
+
+
+---------------
+
+
+
+
+
+
+
