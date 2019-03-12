@@ -1,0 +1,34 @@
+Lecture 40:  Aggregate functions.
+
+-Examples of aggregate functions:
+    ->  MIN
+    ->  MAX
+    ->  AVG
+    ->  SUM
+    ->  COUNT
+
+-Aggregate functions combine data into a single value.
+
+
+---------------
+
+An example of an aggregate function:
+
+SELECT AVG(amount) FROM payment;
+
+
+-The above code yields the average value for the specified data column (amount) for the specified table (payment).
+
+-In case you receive a value that is an irrational number, you can use the ROUND command to round to a certain decimal place:
+
+
+SELECT ROUND(AVG(amount), 2)
+FROM payment;
+
+
+-Because there is a "2" in the code, the ROUND function will round the answer to two decimal places.
+
+
+---------------
+
+
