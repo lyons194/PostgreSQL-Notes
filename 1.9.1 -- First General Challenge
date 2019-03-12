@@ -108,7 +108,23 @@ AND replacement_cost BETWEEN 5 AND 15;
 ---------------
 
 
+Q6:  "How many films have the word 'Truman' somewhere in the title?"
+
+A6:  My initial answer:
+
+SELECT COUNT(title)
+FROM film
+WHERE title LIKE 'Truman%';
 
 
+THE CORRECT ANSWER:
+
+SELECT COUNT(*)
+FROM film
+WHERE title LIKE '%Truman%';
 
 
+-Notice how the modulo signs are on either side of 'Truman'.  This allows us to select any movie titles that both begin and end with 'Truman', which means that 'Truman' "is somewhere in the title".
+
+
+---------------
