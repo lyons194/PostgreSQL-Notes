@@ -88,8 +88,21 @@ GROUP BY rating;
 ---------------
 
 
+Example 7:
+
+SELECT rental_duration, VOUNT(rental_duration)
+FROM film
+GROUP BY rental_duration;
 
 
+---------------
 
 
+Example 8:
 
+SELECT rating, AVG(rental_rate)
+FROM film
+GROUP BY rating;
+
+
+---------------
