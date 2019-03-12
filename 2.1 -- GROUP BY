@@ -1,0 +1,39 @@
+"GROUP BY"
+
+-This is one of the most useful tools in SQL!
+
+-The GROUP BY clause divides the rows returned by the SELECT statement into groups.
+
+-For each group, you can apply an aggregate function, i.e.:
+
+    -Calculating the sum of items.
+    -Count the number of items in the groups.
+
+
+---------------
+
+Example 1:
+
+SELECT column_1, aggregate_function(column_2)
+FROM table_name
+GROUP BY column_1;
+
+
+---------------
+
+
+Example 2:
+
+SELECT customer_id
+FROM payment
+GROUP BY customer_id;
+
+
+---------------
+
+
+-In the above example, the GROUP BY command acts like a DISTINCT command.
+
+-GROUP BY commands are particularly useful when used with aggregate functions.
+
+
