@@ -1,0 +1,53 @@
+The first general challenge / test of PostgreSQL knowledge.
+
+This section consists of test problems and my answers to said problems.
+
+
+---------------
+
+
+Q1.  "How many payment transactions were greater than $5.00?"
+
+A1:
+
+
+SELECT COUNT(amount)
+FROM payment
+WHERE amount > 5.99;
+
+
+-->  My initial answer proved to be correct!
+
+
+---------------
+
+
+Q2:  "How many actors have a first name that starts with the letter 'P'?"
+
+A2:  SELECT COUNT(first_name)
+     FROM customer
+     WHERE first_name LIKE 'P%';
+     
+Comments: My initial answer above was incorrect.
+
+I was not sure how to find the actor data because I was not sure what table it existed in.
+
+Using the modulo sign, I queried all of the first names that began with 'P'.  If I would have put the modulo sign before the letter P, it would have given me all of the names that end with P.
+
+Therefore, the correct answer to this question is:
+
+     SELECT COUNT(*)
+     FROM actor
+     WHERE first_name LIKE 'P%';
+
+
+---------------
+
+
+
+
+
+
+
+
+
