@@ -44,8 +44,42 @@ Therefore, the correct answer to this question is:
 ---------------
 
 
+Q3: 'How many unique districts are the customers from?'
+
+A3:  My initial answer:
+
+SELECT COUNT(DISTINCT district)
+FROM address;
 
 
+The correct answer:
+
+SELECT COUNT(DISTINCT(district))
+FROM address;
+
+
+Note:  The two answers: my initial answer and the 'correct' answer, yielded the same number.  However, it is a good idea to use the parentheses, just to err on the side of caution.
+
+
+---------------
+
+
+Q4:  'Retrieve the list of names for those distinct districts from the previous question.
+
+
+A4:  My initial answer:
+
+SELECT DISTINCT(district)
+FROM address;
+
+
+This answer is correct!
+
+
+---------------
+
+
+Q5:
 
 
 
