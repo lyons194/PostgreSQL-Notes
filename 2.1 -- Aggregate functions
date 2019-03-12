@@ -52,7 +52,3 @@ SELECT SUM(amount) FROM payment;
 
 -> This query returns the summation of a column's data.
 
-
-
-
-
