@@ -79,7 +79,34 @@ This answer is correct!
 ---------------
 
 
-Q5:
+Q5:  'How many films have a rating of R and a replacement cost between $5 and $15?'
+
+A5:  My initial answer:
+
+SELECT COUNT(*)
+FROM film
+WHERE rating = 'R'
+AND replacement_cost >= 5
+AND replacement_cost <= 15;
+
+
+-Note:  Initially, for the first line in my initial query, I wrote: SELECT COUNT(rating, replacement_cost) FROM film.  However, when the command had the above code for its first line, it yielded an error message.
+
+
+THE CORRECT SOLUTION:
+
+SELECT (*) FROM film
+WHERE rating = 'R'
+AND replacement_cost BETWEEN 5 AND 15;
+
+
+-Though the soluton is different than what I initially wrote, it yields the same result.  Remember that the BETWEEN statement can expedite/simplify queries.
+
+-When you use the SELECT(*) FROM table_name, you're querying the number of rows that will be returned (sometimes tailored to specified parameters listed below it).
+
+
+---------------
+
 
 
 
