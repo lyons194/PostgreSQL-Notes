@@ -1,0 +1,32 @@
+The first general challenge / test of PostgreSQL knowledge.
+
+This section consists of test problems and my answers to said problems.
+
+
+---------------
+
+
+Q1.  "How many payment transactions were greater than $5.00?"
+
+A1:
+
+
+SELECT COUNT(amount)
+FROM payment
+WHERE amount > 5.99;
+
+
+-->  My initial answer proved to be correct!
+
+
+---------------
+
+
+Q2:  "How many actors have a first name that starts with the letter 'P'?"
+
+A2:  sfd
+
+
+
+
+---------------
