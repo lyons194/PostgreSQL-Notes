@@ -64,9 +64,17 @@ BA:	SELECT ROUND(AVG(replacement_cost),2), rating
 ---------------
 
 
+Q4:	'We want to give coupons to the five customers who have spent the most amount of money.  What are the customer id's of these top five customers?'
+
+A4:	My initial answer:
+
+	SELECT customer_id, SUM(amount)
+	FROM payment
+	GROUP BY customer_id
+	ORDER BY SUM(amount) DESC
+	LIMIT 5;
+	
+	Correct.
 
 
-
-
-
-
+---------------
