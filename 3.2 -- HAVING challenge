@@ -1,0 +1,41 @@
+'HAVING' clause assessment.
+
+
+---------------
+
+
+Q1:	'We want to know which customers are eligible for a platinum credit card.  The requirements are that the customer has at least a total of 40 transaction payments.  What customers are eligible for the credit card?'
+
+
+A1:	My initial answer:
+
+	SELECT customer_id, COUNT(rental_id)
+	FROM payment
+	GROUP BY customer_id
+	HAVING COUNT(rental_id) >= 40;
+	
+	
+*The correct answer given in the lecture solution slides had the "amount" column in place of the "rental_id" column which appeared in my initial answer.  However, my initial answer yielded the same answer as the lecture solution.
+
+
+---------------
+
+
+Q2:	'When grouped by rating, what movie ratings have an average rental duration of more than five days?'
+
+
+A1:	My initial answer:
+
+	SELECT rating, AVG(rental_duration)
+	FROM film
+	GROUP BY rating
+	HAVING AVG(rental_duration) > 5;
+	
+	
+	-->  Correct!
+	
+
+---------------
+
+
+
