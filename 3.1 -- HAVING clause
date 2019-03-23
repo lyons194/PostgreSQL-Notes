@@ -38,3 +38,34 @@ HAVING SUM(amount) > 200;
 
 
 ---------------
+
+
+-Recall that you use the HAVING clause after you use GROUP BY.
+
+
+---------------
+
+
+Example:
+
+SELECT store_id, COUNT(customer_id)
+FROM customer
+GROUP BY store_id
+HAVING COUNT(customer_id) > 300;
+
+
+
+Example:
+
+SELECT rating, AVG(rental_rate)
+FROM film
+WHERE rating IN('R', 'G', 'PG')
+GROUP BY rating
+HAVING AVG(rental_rate) < 3;
+
+
+---------------
+
+
+End of notes on this section.
+
