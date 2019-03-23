@@ -1,0 +1,40 @@
+The 'HAVING' statement.
+
+
+---------------
+
+
+-HAVING is often used with the GROUP BY clause to filter group rows that do not specify a certain condition.
+
+
+---------------
+
+
+Example:
+
+SELECT column_1, aggregate_function(column_2)
+FROM table_name
+GROUP BY column_1
+HAVING condition;
+
+
+---------------
+
+
+-The HAVING clause sets the condition for group rows created by the GROUP BY clause after the GROUP BY clause applies while the WHERE clause sets the condition for individual rows before the GROUP BY clause applies.
+
+-This is the main difference between the HAVING and WHERE clauses.
+
+
+---------------
+
+
+Example:
+
+SELECT customer_id SUM(amount)
+FROM payment
+GROUP BY customer_id
+HAVING SUM(amount) > 200;
+
+
+---------------
